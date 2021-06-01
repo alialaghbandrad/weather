@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>Weather Forecast</title>
+</head>
+
+<body onload="messUnderForm()">
+    
+    <div class="">
+        <div class="container">
+            <div id="up">
+                <div class="containerUp">Demo login</div>
+                <div class="containerUp">Email: admin@yopmail.com</div>
+                <div class="containerUp">password: adminyopmail</div>
+            </div>
+            <form id="form" action="/" method="GET">
+                <h3 id="logHeading">Login</h3>
+                <label>Email Address</label>
+                <input type="email" name="email" id="email">
+                <label>Password</label>
+                <input type="password" name="password" id="password">
+                <button id="button" type="submit">Login</button>
+                <div id="error"></div>
+            </form>
+
+            <div id="weatherInfo">
+                <div id="montrealWeather"></div>
+            </div>
+
+            <div id="footerForm" >
+            <p id="message"> </p>
+            <p id="date"> </p>
+            <p id="time"> </p>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
